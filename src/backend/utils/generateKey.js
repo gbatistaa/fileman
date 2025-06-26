@@ -8,7 +8,7 @@ const varName = "JWT_SECRET";
 let envContent = "";
 
 if (fs.existsSync(envPath)) {
-  envContent = fs.readFileSync(envPath, "uft8");
+  envContent = fs.readFileSync(envPath, "utf8");
   envContent = envContent.replace(new RegExp(`^${varName}=.*`, "m"), "");
   envContent = envContent.trim() + "\n";
 }
