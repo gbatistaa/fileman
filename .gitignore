@@ -1,2 +1,4 @@
 src/backend/.env
 node_modules
+.idx
+.vscode
